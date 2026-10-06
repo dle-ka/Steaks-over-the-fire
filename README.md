@@ -6,8 +6,6 @@ interaction design, and clean vanilla JS without any frameworks.
 
 ---
 
-## 🇬🇧 English
-
 ### Overview
 
 EMBER is a one-page restaurant website with a dark, cinematic aesthetic.
@@ -43,29 +41,6 @@ effects, a slider, and form validation.
 - **Vanilla JavaScript** — no libraries, no dependencies
 - **Google Fonts** — Playfair Display + Manrope
 
-### Project Structure
-ember-steakhouse/
-├── index.html # Markup and content
-├── style.css # All styles and responsive rules
-├── script.js # Preloader, parallax, slider, form validation
-└── README.md
 
-
-### Getting Started
-
-```bash
-git clone https://github.com/dle-ka/Steaks-over-the-fire.git
-Then open index.html in any modern browser. No installation, no build step.
-
-What I practiced
-Building a full landing page from scratch without frameworks
-
-Writing clean, readable CSS with custom properties
-
-Using IntersectionObserver for scroll-based animations
-
-Implementing a slider with scroll-snap and dynamic dots
-
-Form validation with a phone mask and custom error messages
 
 Responsive design across desktop, tablet, and mobile
