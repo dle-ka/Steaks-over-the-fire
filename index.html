@@ -1,0 +1,478 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="EMBER — премиальный ресторан стейков на открытом огне. Open-fire grill, dry-aged beef, ремесло и роскошь.">
+  <title>EMBER — Steaks on Fire · Open Grill</title>
+  
+  <!-- Google Fonts: Playfair Display (заголовки) + Manrope (тело) -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@300;400;500;600&family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;1,400&display=swap" rel="stylesheet">
+  
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <!-- ========== ПРЕЛОАДЕР ========== -->
+  <div class="preloader" id="preloader">
+    <div class="preloader__bg" aria-hidden="true">
+      <span class="preloader__pulse preloader__pulse--1"></span>
+      <span class="preloader__pulse preloader__pulse--2"></span>
+      <span class="preloader__spark preloader__spark--1"></span>
+      <span class="preloader__spark preloader__spark--2"></span>
+      <span class="preloader__spark preloader__spark--3"></span>
+      <span class="preloader__spark preloader__spark--4"></span>
+      <span class="preloader__spark preloader__spark--5"></span>
+      <span class="preloader__spark preloader__spark--6"></span>
+    </div>
+    <div class="preloader__flame" aria-hidden="true">
+      <span class="preloader__flame-layer preloader__flame-layer--1"></span>
+      <span class="preloader__flame-layer preloader__flame-layer--2"></span>
+      <span class="preloader__flame-layer preloader__flame-layer--3"></span>
+    </div>
+    <p class="preloader__text">EMBER</p>
+  </div>
+
+  <!-- ========== НАВИГАЦИЯ ========== -->
+  <header class="header" id="header">
+    <div class="header__inner">
+      <a href="#hero" class="logo">EMBER</a>
+      <nav class="nav" id="nav">
+        <a href="#about" class="nav__link">О нас</a>
+        <a href="#menu" class="nav__link">Меню</a>
+        <a href="#process" class="nav__link">Процесс</a>
+        <a href="#gallery" class="nav__link">Галерея</a>
+        <a href="#reviews" class="nav__link">Отзывы</a>
+        <a href="#booking" class="nav__link nav__link--cta">Бронь</a>
+      </nav>
+      <button class="burger" id="burger" aria-label="Меню">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+    </div>
+  </header>
+
+  <main>
+    <!-- ========== 1. HERO ========== -->
+    <section class="hero" id="hero">
+      <div class="hero__bg" id="heroBg"></div>
+      <div class="hero__overlay"></div>
+      <div class="hero__content">
+        <p class="hero__eyebrow reveal">Open-fire · Dry-aged · Grill</p>
+        <h1 class="hero__title reveal">
+          <span>Стейки</span>
+          <span>на огне</span>
+        </h1>
+        <p class="hero__subtitle reveal">Выдержанное мясо. Открытый огонь. Ремесло, доведённое до искусства.</p>
+        <div class="hero__actions reveal">
+          <a href="#booking" class="btn btn--primary">Забронировать стол</a>
+          <a href="#menu" class="btn btn--outline">Меню</a>
+        </div>
+      </div>
+      <div class="hero__scroll">
+        <span>Листайте</span>
+        <div class="hero__scroll-line"></div>
+      </div>
+    </section>
+
+    <!-- ========== 2. О РЕСТОРАНЕ ========== -->
+    <section class="about section" id="about">
+      <div class="container">
+        <div class="about__grid">
+          <div class="about__text reveal">
+            <p class="section-eyebrow">Манифест</p>
+            <h2 class="section-title">Огонь.<br>Время. Ремесло.</h2>
+            <div class="about__divider"></div>
+            <p class="about__lead">Мы не жарим стейки. Мы даём мясу встретиться с открытым огнём и временем — так, как это делали веками.</p>
+            <p class="about__body">Каждый кусок проходит сухую выдержку от 28 до 60 дней. Затем — открытый огонь и раскалённый уголь. Никаких компромиссов. Только ремесло и абсолютное уважение к продукту.</p>
+            <p class="about__signature">— Шеф-повар Эмбер</p>
+          </div>
+          <div class="about__image reveal">
+            <img src="https://images.unsplash.com/photo-1600891964092-4316c288032e?auto=format&fit=crop&w=900&q=80" alt="Выдержанный стейк на гриле" loading="lazy">
+            <div class="about__image-frame"></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ========== 3. SIGNATURE STEAKS ========== -->
+    <section class="menu section" id="menu">
+      <div class="container">
+        <div class="section-header reveal">
+          <p class="section-eyebrow">Signature</p>
+          <h2 class="section-title">Стейки на огне</h2>
+          <p class="section-desc">Шесть позиций, которые определяют наш стол</p>
+        </div>
+
+        <div class="menu__grid">
+          <!-- Карточка 1 -->
+          <article class="menu-card reveal">
+            <div class="menu-card__image">
+              <img src="https://images.unsplash.com/photo-1558030006-450675393462?auto=format&fit=crop&w=600&q=80" alt="Ribeye Dry-Aged" loading="lazy">
+            </div>
+            <div class="menu-card__body">
+              <h3 class="menu-card__title">Ribeye Dry-Aged</h3>
+              <p class="menu-card__desc">28 дней выдержки. Мраморность и корочка от открытого огня на раскалённом угле.</p>
+              <div class="menu-card__meta">
+                <span class="menu-card__weight">450 г</span>
+                <span class="menu-card__price">6 800 ₽</span>
+              </div>
+            </div>
+          </article>
+
+          <!-- Карточка 2 -->
+          <article class="menu-card reveal">
+            <div class="menu-card__image">
+              <img src="https://images.unsplash.com/photo-1544025162-d76694265947?auto=format&fit=crop&w=600&q=80" alt="Tomahawk Ember" loading="lazy">
+            </div>
+            <div class="menu-card__body">
+              <h3 class="menu-card__title">Tomahawk Ember</h3>
+              <p class="menu-card__desc">Гигантский стейк на кости. 45 дней dry-age. Подаётся с костяным мозгом.</p>
+              <div class="menu-card__meta">
+                <span class="menu-card__weight">1,2 кг</span>
+                <span class="menu-card__price">18 500 ₽</span>
+              </div>
+            </div>
+          </article>
+
+          <!-- Карточка 3 -->
+          <article class="menu-card reveal">
+            <div class="menu-card__image">
+              <img src="https://images.unsplash.com/photo-1529692236671-f1f6cf9683ba?auto=format&fit=crop&w=600&q=80" alt="Striploin Fire" loading="lazy">
+            </div>
+            <div class="menu-card__body">
+              <h3 class="menu-card__title">Striploin Fire</h3>
+              <p class="menu-card__desc">Классика. Открытый огонь, минимальная соль, максимум вкуса выдержанного мяса.</p>
+              <div class="menu-card__meta">
+                <span class="menu-card__weight">400 г</span>
+                <span class="menu-card__price">5 900 ₽</span>
+              </div>
+            </div>
+          </article>
+
+          <!-- Карточка 4 -->
+          <article class="menu-card reveal">
+            <div class="menu-card__image">
+              <img src="https://images.unsplash.com/photo-1603360946369-dc9bb6258143?auto=format&fit=crop&w=600&q=80" alt="Filet Mignon Ash" loading="lazy">
+            </div>
+            <div class="menu-card__body">
+              <h3 class="menu-card__title">Filet Mignon Ash</h3>
+              <p class="menu-card__desc">Нежность выдержки и корочка от раскалённого угля. Подаётся medium-rare.</p>
+              <div class="menu-card__meta">
+                <span class="menu-card__weight">280 г</span>
+                <span class="menu-card__price">7 200 ₽</span>
+              </div>
+            </div>
+          </article>
+
+          <!-- Карточка 5 -->
+          <article class="menu-card reveal">
+            <div class="menu-card__image">
+              <img src="https://images.unsplash.com/photo-1546833999-b9f581a1996d?auto=format&fit=crop&w=600&q=80" alt="Picanha Fire" loading="lazy">
+            </div>
+            <div class="menu-card__body">
+              <h3 class="menu-card__title">Picanha Fire</h3>
+              <p class="menu-card__desc">Бразильский кут с жировой шапкой. Открытый огонь и идеальный баланс.</p>
+              <div class="menu-card__meta">
+                <span class="menu-card__weight">500 г</span>
+                <span class="menu-card__price">6 400 ₽</span>
+              </div>
+            </div>
+          </article>
+
+          <!-- Карточка 6 -->
+          <article class="menu-card reveal">
+            <div class="menu-card__image">
+              <img src="https://images.unsplash.com/photo-1504674900247-0877df9cc836?auto=format&fit=crop&w=600&q=80" alt="Wagyu A5 Ember" loading="lazy">
+            </div>
+            <div class="menu-card__body">
+              <h3 class="menu-card__title">Wagyu A5 Ember</h3>
+              <p class="menu-card__desc">Японский A5. Минимальная обработка. Только соль, огонь и уважение.</p>
+              <div class="menu-card__meta">
+                <span class="menu-card__weight">200 г</span>
+                <span class="menu-card__price">24 000 ₽</span>
+              </div>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ========== 4. ПРОЦЕСС ========== -->
+    <section class="process section" id="process">
+      <div class="container">
+        <div class="section-header reveal">
+          <p class="section-eyebrow">Ремесло</p>
+          <h2 class="section-title">Путь стейка</h2>
+        </div>
+
+        <div class="process__cascade">
+          <article class="process__block process__block--1 reveal">
+            <span class="process__num">01</span>
+            <h3 class="process__title">Выбор мяса</h3>
+            <p class="process__text">Только премиальные отрубы от проверенных ферм. Мраморность, возраст и происхождение — всё имеет значение.</p>
+          </article>
+          <article class="process__block process__block--2 reveal">
+            <span class="process__num">02</span>
+            <h3 class="process__title">Сухая выдержка</h3>
+            <p class="process__text">Камера 28–60 дней. Контроль температуры и влажности. Мясо набирает глубину вкуса.</p>
+          </article>
+          <article class="process__block process__block--3 reveal">
+            <span class="process__num">03</span>
+            <h3 class="process__title">Открытый огонь</h3>
+            <p class="process__text">Раскалённый уголь и прямой жар. Корочка и характер — без компромиссов.</p>
+          </article>
+          <article class="process__block process__block--4 reveal">
+            <span class="process__num">04</span>
+            <h3 class="process__title">Подача</h3>
+            <p class="process__text">Отдых, точная нарезка, минимум на тарелке — чтобы ничто не отвлекало от главного.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ========== 5. ГАЛЕРЕЯ ========== -->
+    <section class="gallery section" id="gallery">
+      <div class="container">
+        <div class="section-header reveal">
+          <p class="section-eyebrow">Атмосфера</p>
+          <h2 class="section-title">Галерея</h2>
+        </div>
+
+        <!-- Равномерная сетка 3×3 — без пустых ячеек -->
+        <div class="gallery__grid">
+          <div class="gallery__item reveal">
+            <img src="https://images.unsplash.com/photo-1514933651103-005eec06c04b?auto=format&fit=crop&w=700&q=80" alt="Интерьер ресторана" loading="lazy">
+          </div>
+          <div class="gallery__item reveal">
+            <img src="https://images.unsplash.com/photo-1559339352-11d035aa65de?auto=format&fit=crop&w=700&q=80" alt="Огонь и уголь" loading="lazy">
+          </div>
+          <div class="gallery__item reveal">
+            <img src="https://images.unsplash.com/photo-1414235077428-338989a2e8c0?auto=format&fit=crop&w=700&q=80" alt="Сервировка" loading="lazy">
+          </div>
+          <div class="gallery__item reveal">
+            <img src="https://images.unsplash.com/photo-1550966871-3ed3cdb5ed0c?auto=format&fit=crop&w=700&q=80" alt="Огонь и мясо" loading="lazy">
+          </div>
+          <div class="gallery__item reveal">
+            <img src="https://images.unsplash.com/photo-1555396273-367ea4eb4db5?auto=format&fit=crop&w=700&q=80" alt="Детали зала" loading="lazy">
+          </div>
+          <div class="gallery__item reveal">
+            <img src="https://images.unsplash.com/photo-1466978913421-dad2ebd01d17?auto=format&fit=crop&w=700&q=80" alt="Стейк крупным планом" loading="lazy">
+          </div>
+          <div class="gallery__item reveal">
+            <img src="https://images.unsplash.com/photo-1600891964092-4316c288032e?auto=format&fit=crop&w=700&q=80" alt="Стейк на гриле" loading="lazy">
+          </div>
+          <div class="gallery__item reveal">
+            <img src="https://images.unsplash.com/photo-1558030006-450675393462?auto=format&fit=crop&w=700&q=80" alt="Жар и корочка" loading="lazy">
+          </div>
+          <div class="gallery__item reveal">
+            <img src="https://images.unsplash.com/photo-1544025162-d76694265947?auto=format&fit=crop&w=700&q=80" alt="Мясо на огне" loading="lazy">
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ========== 6. ОТЗЫВЫ ========== -->
+    <section class="reviews section" id="reviews">
+      <div class="container">
+        <div class="section-header reveal">
+          <p class="section-eyebrow">Гости</p>
+          <h2 class="section-title">Отзывы</h2>
+        </div>
+
+        <div class="reviews__slider-wrap reveal">
+          <button class="reviews__nav reviews__nav--prev" id="reviewsPrev" aria-label="Предыдущий отзыв">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M15 6l-6 6 6 6"/></svg>
+          </button>
+
+          <div class="reviews__track" id="reviewsTrack">
+            <blockquote class="review-card">
+              <p class="review-card__text">«Это не ресторан. Это храм мяса. Tomahawk, который я ел здесь, изменил моё представление о стейках навсегда.»</p>
+              <footer class="review-card__author">
+                <span class="review-card__name">Алексей М.</span>
+                <span class="review-card__role">Гость с 2023</span>
+              </footer>
+            </blockquote>
+
+            <blockquote class="review-card">
+              <p class="review-card__text">«Огонь, тишина, идеальная прожарка. Каждая деталь продумана. Возвращаюсь каждый месяц.»</p>
+              <footer class="review-card__author">
+                <span class="review-card__name">Марина К.</span>
+                <span class="review-card__role">Постоянный гость</span>
+              </footer>
+            </blockquote>
+
+            <blockquote class="review-card">
+              <p class="review-card__text">«Wagyu A5 здесь — это опыт, а не просто блюдо. Рекомендую всем, кто ценит настоящее ремесло.»</p>
+              <footer class="review-card__author">
+                <span class="review-card__name">Дмитрий В.</span>
+                <span class="review-card__role">Шеф-повар</span>
+              </footer>
+            </blockquote>
+
+            <blockquote class="review-card">
+              <p class="review-card__text">«Привезли сюда коллег из Лондона — все молчали первые пять минут. Потом только: “When can we come back?”»</p>
+              <footer class="review-card__author">
+                <span class="review-card__name">Игорь С.</span>
+                <span class="review-card__role">Бизнес-ужин</span>
+              </footer>
+            </blockquote>
+
+            <blockquote class="review-card">
+              <p class="review-card__text">«Picanha на открытом огне — лучшее, что я ел в Москве за последние годы. Атмосфера под стать.»</p>
+              <footer class="review-card__author">
+                <span class="review-card__name">Елена Р.</span>
+                <span class="review-card__role">Фуд-критик</span>
+              </footer>
+            </blockquote>
+
+            <blockquote class="review-card">
+              <p class="review-card__text">«Сухая выдержка чувствуется в каждом куске. Здесь мясо уважают — и это главное.»</p>
+              <footer class="review-card__author">
+                <span class="review-card__name">Андрей П.</span>
+                <span class="review-card__role">Гость с 2024</span>
+              </footer>
+            </blockquote>
+          </div>
+
+          <button class="reviews__nav reviews__nav--next" id="reviewsNext" aria-label="Следующий отзыв">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M9 6l6 6-6 6"/></svg>
+          </button>
+        </div>
+
+        <div class="reviews__dots" id="reviewsDots"></div>
+      </div>
+    </section>
+
+    <!-- ========== 7. БРОНИРОВАНИЕ ========== -->
+    <section class="booking section" id="booking">
+      <div class="container">
+        <div class="booking__wrapper reveal">
+          <div class="booking__info">
+            <p class="section-eyebrow">Резерв</p>
+            <h2 class="section-title">Забронировать стол</h2>
+            <p class="booking__note">Мы принимаем ограниченное количество гостей. Бронь рекомендуется за 3–7 дней.</p>
+            <ul class="booking__details">
+              <li>Вт–Чт: 18:00 – 23:00</li>
+              <li>Пт–Сб: 18:00 – 00:00</li>
+              <li>Вс: 17:00 – 22:00</li>
+              <li>Пн: выходной</li>
+            </ul>
+          </div>
+
+          <form class="booking__form" id="bookingForm" novalidate>
+            <div class="form-group">
+              <label for="name">Имя</label>
+              <input type="text" id="name" name="name" placeholder="Как к вам обращаться" required>
+              <span class="form-error" id="nameError"></span>
+            </div>
+
+            <div class="form-group">
+              <label for="phone">Телефон</label>
+              <input type="tel" id="phone" name="phone" placeholder="+7 (___) ___-__-__" required>
+              <span class="form-error" id="phoneError"></span>
+            </div>
+
+            <div class="form-row">
+              <div class="form-group">
+                <label for="date">Дата</label>
+                <input type="date" id="date" name="date" required>
+                <span class="form-error" id="dateError"></span>
+              </div>
+              <div class="form-group">
+                <label for="time">Время</label>
+                <select id="time" name="time" required>
+                  <option value="">Выберите</option>
+                  <option value="18:00">18:00</option>
+                  <option value="18:30">18:30</option>
+                  <option value="19:00">19:00</option>
+                  <option value="19:30">19:30</option>
+                  <option value="20:00">20:00</option>
+                  <option value="20:30">20:30</option>
+                  <option value="21:00">21:00</option>
+                  <option value="21:30">21:30</option>
+                </select>
+                <span class="form-error" id="timeError"></span>
+              </div>
+            </div>
+
+            <div class="form-group">
+              <label for="guests">Гостей</label>
+              <select id="guests" name="guests" required>
+                <option value="">Количество</option>
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5">5</option>
+                <option value="6">6+</option>
+              </select>
+              <span class="form-error" id="guestsError"></span>
+            </div>
+
+            <button type="submit" class="btn btn--primary btn--full">Отправить заявку</button>
+            <p class="form-success" id="formSuccess" hidden>Спасибо! Мы свяжемся с вами в течение часа.</p>
+          </form>
+        </div>
+      </div>
+    </section>
+
+    <!-- ========== 8. КОНТАКТЫ ========== -->
+    <section class="contacts section" id="contacts">
+      <div class="container">
+        <div class="contacts__grid reveal">
+          <div class="contacts__info">
+            <p class="section-eyebrow">Контакты</p>
+            <h2 class="section-title">Как нас найти</h2>
+            <address class="contacts__address">
+              <p>Москва, Большая Никитская, 14</p>
+              <p><a href="tel:+74951234567">+7 (495) 123-45-67</a></p>
+              <p><a href="mailto:hello@ember.rest">hello@ember.rest</a></p>
+            </address>
+            <div class="contacts__socials">
+              <a href="#" class="social-link" aria-label="Instagram">Instagram</a>
+              <a href="#" class="social-link" aria-label="Telegram">Telegram</a>
+            </div>
+            <a
+              class="btn btn--outline contacts__map-link"
+              href="https://www.openstreetmap.org/?mlat=55.7575&amp;mlon=37.5990#map=17/55.7575/37.5990"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              Открыть на карте
+            </a>
+          </div>
+          <div class="contacts__map">
+            <!-- OpenStreetMap: Большая Никитская, 14, Москва -->
+            <iframe
+              class="contacts__map-frame"
+              title="EMBER на карте — Большая Никитская, 14"
+              src="https://www.openstreetmap.org/export/embed.html?bbox=37.5900%2C55.7535%2C37.6080%2C55.7615&amp;layer=mapnik&amp;marker=55.7575%2C37.5990"
+              loading="lazy"
+              referrerpolicy="no-referrer-when-downgrade"
+            ></iframe>
+          </div>
+        </div>
+      </div>
+    </section>
+
+  <!-- Курсорный градиент (следует за мышью) -->
+  <div class="cursor-glow" id="cursorGlow" aria-hidden="true"></div>
+  </main>
+
+  <!-- ========== ФУТЕР ========== -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer__inner">
+        <a href="#hero" class="logo">EMBER</a>
+        <p class="footer__copy">© 2025 EMBER. Все права защищены.</p>
+        <p class="footer__note">Steaks on Fire · Open Grill · Dry-Aged</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
