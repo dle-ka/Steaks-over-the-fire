@@ -1,158 +1,71 @@
-# EMBER — Landing Page
+# EMBER — Steaks on Fire · Open Grill
 
-Премиальный одностраничный сайт ресторана стейков на открытом огне.
-
-> **Open-fire · Dry-aged · Grill**  
-> Чистый HTML / CSS / JavaScript · без фреймворков и UI-библиотек
-
----
-
-## О проекте
-
-**EMBER** — концептуальный landing page для премиального стейк-хауса.  
-Фокус на атмосфере: открытый огонь, выдержанное мясо, ремесло и сдержанная роскошь.
-
-Сайт собран как законченный продукт: от прелоадера и анимаций до формы бронирования с валидацией и встроенной карты.
-
-| | |
-|---|---|
-| **Тип** | One-page landing |
-| **Стек** | HTML5 · CSS3 · Vanilla JS |
-| **Адаптив** | Desktop / Tablet / Mobile |
-| **Шрифты** | Playfair Display + Manrope (Google Fonts) |
-| **Карты** | OpenStreetMap embed |
+A steakhouse landing page built with pure HTML, CSS, and vanilla JavaScript.
+Designed as a portfolio piece to showcase front-end skills: layout, animation,
+interaction design, and clean vanilla JS without any frameworks.
 
 ---
 
-## Что внутри
+## 🇬🇧 English
 
-### Секции
+### Overview
 
-1. **Hero** — полноэкранный блок с parallax-фоном, крупной типографикой и CTA  
-2. **О ресторане** — манифест огня и выдержки + атмосферное фото  
-3. **Signature steaks** — сетка из 6 карточек блюд с hover-эффектами  
-4. **Ремесло** — каскад шагов пути стейка (выбор → выдержка → огонь → подача)  
-5. **Галерея** — ровная сетка 3×3 с shimmer-переливом при наведении  
-6. **Отзывы** — горизонтальный слайдер с навигацией и точками  
-7. **Бронирование** — форма с валидацией, маской телефона и минимальной датой  
-8. **Контакты** — адрес, соцсети и интерактивная карта OpenStreetMap  
+EMBER is a one-page restaurant website with a dark, cinematic aesthetic.
+It focuses on smooth scroll animations, responsive layout, and small interactive
+details that make the page feel alive — parallax, reveal-on-scroll, hover
+effects, a slider, and form validation.
 
-### UX и анимации
+### What's on the page
 
-- Прелоадер с анимированным пламенем, импульсами тепла и искрами  
-- Появление блоков при скролле через `IntersectionObserver`  
-- Parallax на hero-фоне  
-- Мягкий градиент, следующий за курсором  
-- Hover-эффекты на карточках, кнопках и фото  
-- Плавный якорь-скролл и sticky-навигация  
+- **Preloader** — animated flame with sparks and pulsing glow
+- **Header** — sticky navigation that changes on scroll, mobile burger menu
+- **Hero** — full-screen section with parallax background and large typography
+- **About** — restaurant manifesto with framed image
+- **Signature menu** — six steak cards with hover lift and image zoom
+- **Process** — "The Path of the Steak" in four alternating steps
+- **Gallery** — 3×3 image grid with shimmer effect on hover
+- **Reviews** — horizontal scroll-snap slider with arrows and dots
+- **Booking form** — client-side validation, phone mask, date guard, success message
+- **Contacts** — address, phone, email, socials, and an embedded map
+- **Footer** — logo and copyright
 
-### Дизайн-система
+### Interactions & details
 
-**Палитра**
+- Reveal-on-scroll animations via `IntersectionObserver`
+- Custom cursor glow that follows the mouse
+- Smooth anchor scrolling with header offset
+- Fully responsive: desktop, tablet, mobile
 
-| Роль | Hex |
-|------|-----|
-| Угольно-чёрный | `#0d0b0a` |
-| Дымчатый фон | `#1a1714` |
-| Бордово-коричневый | `#3a1f1a` |
-| Обожжённый янтарь | `#b8791f` / `#c98a2e` |
-| Раскалённый акцент | `#d94f1e` |
-| Кремово-дымчатый | `#e8e0d5` |
-| Дымчато-серый | `#8a8175` |
+### Tech Stack
 
-**Типографика**
+- **HTML5** — semantic markup
+- **CSS3** — custom properties, Grid, Flexbox, `clamp()`, keyframe animations
+- **Vanilla JavaScript** — no libraries, no dependencies
+- **Google Fonts** — Playfair Display + Manrope
 
-- Заголовки — *Playfair Display* (крупный трекинг, serif)  
-- Текст — *Manrope* (читаемый sans-serif)  
-
-Стиль намеренно уходит от «AI-шаблонов»: без фиолетовых градиентов, emoji и стоковых иконок.
-
----
-
-## Стек и ограничения
-
-```
-HTML5
-CSS3  (custom properties, Grid, Flexbox, @keyframes, media queries)
-JavaScript (ES6+, без зависимостей)
-```
-
-- Без React / Vue / jQuery  
-- Без Tailwind / Bootstrap / UI-kit  
-- Без сборщиков: открыл `index.html` — сайт работает  
-
-Изображения — Unsplash (прямые URL).  
-Шрифты — Google Fonts.
-
----
-
-## Структура файлов
-
-```
+### Project Structure
 ember-steakhouse/
-├── index.html    # разметка всех секций
-├── style.css     # стили, анимации, адаптив
-├── script.js     # прелоадер, parallax, слайдер, форма, курсор
+├── index.html # Markup and content
+├── style.css # All styles and responsive rules
+├── script.js # Preloader, parallax, slider, form validation
 └── README.md
-```
 
----
 
-## Как запустить
-
-1. Склонируйте репозиторий или скачайте архив  
-2. Откройте `index.html` в браузере  
-
-Либо через Live Server в VS Code:
+### Getting Started
 
 ```bash
-# если используете расширение Live Server —
-# ПКМ по index.html → Open with Live Server
-```
+git clone https://github.com/dle-ka/Steaks-over-the-fire.git
+Then open index.html in any modern browser. No installation, no build step.
 
-Для шрифтов и фото нужен интернет.
+What I practiced
+Building a full landing page from scratch without frameworks
 
----
+Writing clean, readable CSS with custom properties
 
-## Форма бронирования
+Using IntersectionObserver for scroll-based animations
 
-Клиентская валидация на чистом JS:
+Implementing a slider with scroll-snap and dynamic dots
 
-- имя (обязательно, минимум 2 символа)  
-- телефон с маской `+7 (___) ___-__-__`  
-- дата (не раньше сегодняшнего дня)  
-- время и количество гостей  
+Form validation with a phone mask and custom error messages
 
-При успешной проверке показывается сообщение подтверждения (отправка на бэкенд не подключена — демо-уровень).
-
----
-
-## Адаптивность
-
-| Breakpoint | Поведение |
-|------------|-----------|
-| ≤ 1024px | Сетки меню 2 колонки, слайдер без стрелок |
-| ≤ 768px | Бургер-меню, каскад ремесла в одну колонку, форма в столбец |
-| ≤ 480px | Галерея 2×2, компактный hero и карта |
-
----
-
-## Что можно доработать
-
-Идеи для расширения проекта:
-
-- [ ] Подключение реальной отправки формы (Formspree / собственный API)  
-- [ ] CMS или JSON для меню и отзывов  
-- [ ] Тёмная/светлая тема (сейчас только dark premium)  
-- [ ] Локализация EN  
-- [ ] Lighthouse-оптимизация изображений (WebP, `srcset`)  
-
----
-
-## Автор
-
-Сверстано как учебный / портфолио-проект: акцент на визуал, микровзаимодействия и чистый код без лишних зависимостей.
-
----
-
-**EMBER** — Steaks on Fire · Open Grill · Dry-Aged
+Responsive design across desktop, tablet, and mobile
